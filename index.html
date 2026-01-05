@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply Leave</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h3>Employee Leave System</h3>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<div class="card">
+  <h2>Apply Leave</h2>
+
+  <form id="leaveForm">
+    <input type="text" id="name" placeholder="Employee Name" required>
+    <input type="text" id="empId" placeholder="Employee ID" required>
+
+    <select id="leaveType" required>
+      <option value="">Leave Type</option>
+      <option>Casual Leave</option>
+      <option>Sick Leave</option>
+      <option>Paid Leave</option>
+    </select>
+
+    <label>From</label>
+    <input type="date" id="fromDate" required>
+
+    <label>To</label>
+    <input type="date" id="toDate" required>
+
+    <textarea id="reason" placeholder="Reason"></textarea>
+
+    <button type="submit">Submit Leave</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
